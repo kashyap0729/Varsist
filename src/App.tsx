@@ -47,9 +47,7 @@ function App() {
         <div className="hero-container">
           <h1>Self-hosted ClickHouse on Your Infrastructure</h1>
           <p>
-            We design, deploy, and operate ClickHouse inside your VPC. Keep SQL analytics 
-            {/* Observability, Gen AI */}
-             fast and predictable while cutting steady state costs by 30-60% compared to 
+            We design, deploy, and operate ClickHouse inside your VPC. Keep SQL analytics fast and predictable while cutting steady state costs by 30-60% compared to 
             Snowflake or ClickHouse Cloud.
           </p>
           <div className="cta-buttons">
