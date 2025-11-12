@@ -17,6 +17,8 @@ import ShowChartIcon from '@mui/icons-material/ShowChart';
 import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 import RouterIcon from '@mui/icons-material/Router';
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneIcon from '@mui/icons-material/Phone';
 
 function App() {
   const [showContactInfo, setShowContactInfo] = React.useState(false);
@@ -404,14 +406,15 @@ function App() {
             padding: '2rem',
             backgroundColor: 'rgba(255, 255, 255, 0.1)',
             borderRadius: '8px',
-            border: '1px solid rgba(255, 255, 255, 0.2)'
           }}>
             <h3 style={{ marginBottom: '1rem' }}>Contact Information</h3>
-            <p style={{ fontSize: '1.1rem', marginBottom: '0.5rem' }}>
-              📧 Email: <a href="mailto:kashyapmrc@gmail.com" style={{ color: '#4285F4' }}>kashyapmrc@gmail.com</a>
+            <p style={{ fontSize: '1.1rem', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <EmailIcon sx={{ fontSize: 24, color: '#4285F4' }} />
+              <span>Email: <a href="mailto:prithvitamada@varsist.com" style={{ color: '#4285F4' }}>prithvitamada@varsist.com</a></span>
             </p>
-            <p style={{ fontSize: '1.1rem' }}>
-              📞 Phone: <a href="tel:+919951378941" style={{ color: '#4285F4' }}>+91 9951378941</a>
+            <p style={{ fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <PhoneIcon sx={{ fontSize: 24, color: '#4285F4' }} />
+              <span>Phone: <a href="tel:+16176516537" style={{ color: '#4285F4' }}>+1 617-651-6537</a></span>
             </p>
           </div>
         )}
@@ -443,7 +446,7 @@ function App() {
                 `Please provide more details about the next steps.`
               );
               
-              const mailtoLink = `mailto:rohitreddykota@gmail.com,kashyapmrc@gmail.com?subject=${subject}&body=${body}`;
+              const mailtoLink = `mailto: prithvitamada@varsist.com?subject=${subject}&body=${body}`;
               
               // Try to open mailto link
               const link = document.createElement('a');
@@ -451,7 +454,7 @@ function App() {
               link.click();
               
               // Show confirmation
-              alert(`Thank you ${name}! Your request will open in your email client.\n\nIf your email client doesn't open automatically, please send an email to:\nrohitreddykota@gmail.com, kashyapmrc@gmail.com\n\nInclude the following information:\n- Name: ${name}\n- Email: ${email}\n- Company: ${company}\n- Project Details: ${message}`);
+              alert(`Thank you ${name}! Your request will open in your email client.\n\nIf your email client doesn't open automatically, please send an email to:\nprithvitamada@varsist.com\n\nInclude the following information:\n- Name: ${name}\n- Email: ${email}\n- Company: ${company}\n- Project Details: ${message}`);
               
               // Reset form
               e.currentTarget.reset();
@@ -552,7 +555,7 @@ function App() {
             <a href="#pricing">Pricing</a>
             <a href="#how-it-works">How It Works</a>
             <a href="#contact">Contact</a>
-            <a href="mailto:rohitreddykota@gmail.com,kashyapmrc@gmail.com">Email</a>
+            <a href="mailto: prithvitamada@varsist.com">Email</a>
           </div>
           <p>&copy; 2025 Varsist Services. All rights reserved.</p>
           <p style={{ marginTop: '1rem' }}>
